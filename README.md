@@ -21,3 +21,9 @@ Step 2. Add the dependency
 	        implementation 'com.github.stacrypt:email-domain-suggestion:0.0.1'
 	}
 
+### How to use
+
+	val suggestionService = EmailDomainSuggestion()
+   	suggestionService.suggest("myName@gamil.com") // return myName@gmail.com
+   	suggestionService.suggest("myName@yaboo.com") // return myName@yahoo.com
+   	suggestionService.suggest("myName@gmsil.com") // return myName@gmail.com
